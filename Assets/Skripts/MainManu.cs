@@ -30,7 +30,6 @@ public class MainManu : MonoBehaviour
 
 
 
-    
     public void QuitGame()
     {
         Application.Quit();

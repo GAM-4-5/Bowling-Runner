@@ -13,6 +13,9 @@ public class selectCamera : MonoBehaviour
     public GameObject camera4;
     public GameObject camera5;
     public GameObject camera6;
+    public GameObject camera7;
+    public GameObject camera8;
+    public GameObject camera9;
 
     AudioListener camera1AudioLis;
     AudioListener camera2AudioLis;
@@ -20,6 +23,9 @@ public class selectCamera : MonoBehaviour
     AudioListener camera4AudioLis;
     AudioListener camera5AudioLis;
     AudioListener camera6AudioLis;
+    AudioListener camera7AudioLis;
+    AudioListener camera8AudioLis;
+    AudioListener camera9AudioLis;
 
     // Use this for initialization
     void Start()
@@ -36,6 +42,9 @@ public class selectCamera : MonoBehaviour
         camera4AudioLis = camera4.GetComponent<AudioListener>();
         camera5AudioLis = camera5.GetComponent<AudioListener>();
         camera6AudioLis = camera6.GetComponent<AudioListener>();
+        camera7AudioLis = camera7.GetComponent<AudioListener>();
+        camera8AudioLis = camera8.GetComponent<AudioListener>();
+        camera9AudioLis = camera9.GetComponent<AudioListener>();
 
         //Camera Position Set
         //cameraPositionChange(PlayerPrefs.GetInt("CameraPosition"));
@@ -66,6 +75,15 @@ public class selectCamera : MonoBehaviour
             camera6AudioLis.enabled = false;
             camera6.SetActive(false);
 
+            camera7AudioLis.enabled = false;
+            camera7.SetActive(false);
+
+            camera8AudioLis.enabled = false;
+            camera8.SetActive(false);
+
+            camera9AudioLis.enabled = false;
+            camera9.SetActive(false);
+
         }
         if (selectedCharacter == 1)
         {
@@ -86,6 +104,15 @@ public class selectCamera : MonoBehaviour
 
             camera6AudioLis.enabled = false;
             camera6.SetActive(false);
+
+            camera7AudioLis.enabled = false;
+            camera7.SetActive(false);
+
+            camera8AudioLis.enabled = false;
+            camera8.SetActive(false);
+
+            camera9AudioLis.enabled = false;
+            camera9.SetActive(false);
 
         }
         if (selectedCharacter == 2)
@@ -108,6 +135,15 @@ public class selectCamera : MonoBehaviour
             camera6AudioLis.enabled = false;
             camera6.SetActive(false);
 
+            camera7AudioLis.enabled = false;
+            camera7.SetActive(false);
+
+            camera8AudioLis.enabled = false;
+            camera8.SetActive(false);
+
+            camera9AudioLis.enabled = false;
+            camera9.SetActive(false);
+
         }
         if (selectedCharacter == 3)
         {
@@ -128,6 +164,15 @@ public class selectCamera : MonoBehaviour
 
             camera6AudioLis.enabled = false;
             camera6.SetActive(false);
+
+            camera7AudioLis.enabled = false;
+            camera7.SetActive(false);
+
+            camera8AudioLis.enabled = false;
+            camera8.SetActive(false);
+
+            camera9AudioLis.enabled = false;
+            camera9.SetActive(false);
 
         }
         if (selectedCharacter == 4)
@@ -150,6 +195,15 @@ public class selectCamera : MonoBehaviour
             camera6AudioLis.enabled = false;
             camera6.SetActive(false);
 
+            camera7AudioLis.enabled = false;
+            camera7.SetActive(false);
+
+            camera8AudioLis.enabled = false;
+            camera8.SetActive(false);
+
+            camera9AudioLis.enabled = false;
+            camera9.SetActive(false);
+
         }
         if (selectedCharacter == 5)
         {
@@ -170,6 +224,105 @@ public class selectCamera : MonoBehaviour
 
             camera5AudioLis.enabled = false;
             camera5.SetActive(false);
+
+            camera7AudioLis.enabled = false;
+            camera7.SetActive(false);
+
+            camera8AudioLis.enabled = false;
+            camera8.SetActive(false);
+
+            camera9AudioLis.enabled = false;
+            camera9.SetActive(false);
+
+        }
+        if (selectedCharacter == 6)
+        {
+            camera6.SetActive(false);
+            camera6AudioLis.enabled = false;
+
+            camera2AudioLis.enabled = false;
+            camera2.SetActive(false);
+
+            camera3AudioLis.enabled = false;
+            camera3.SetActive(false);
+
+            camera4AudioLis.enabled = false;
+            camera4.SetActive(false);
+
+            camera1AudioLis.enabled = false;
+            camera1.SetActive(false);
+
+            camera5AudioLis.enabled = false;
+            camera5.SetActive(false);
+
+            camera7AudioLis.enabled = true;
+            camera7.SetActive(true);
+
+            camera8AudioLis.enabled = false;
+            camera8.SetActive(false);
+
+            camera9AudioLis.enabled = false;
+            camera9.SetActive(false);
+
+        }
+        if (selectedCharacter == 7)
+        {
+            camera6.SetActive(false);
+            camera6AudioLis.enabled = false;
+
+            camera2AudioLis.enabled = false;
+            camera2.SetActive(false);
+
+            camera3AudioLis.enabled = false;
+            camera3.SetActive(false);
+
+            camera4AudioLis.enabled = false;
+            camera4.SetActive(false);
+
+            camera1AudioLis.enabled = false;
+            camera1.SetActive(false);
+
+            camera5AudioLis.enabled = false;
+            camera5.SetActive(false);
+
+            camera7AudioLis.enabled = false;
+            camera7.SetActive(false);
+
+            camera8AudioLis.enabled = true;
+            camera8.SetActive(true);
+
+            camera9AudioLis.enabled = false;
+            camera9.SetActive(false);
+
+        }
+        if (selectedCharacter == 8)
+        {
+            camera6.SetActive(false);
+            camera6AudioLis.enabled = false;
+
+            camera2AudioLis.enabled = false;
+            camera2.SetActive(false);
+
+            camera3AudioLis.enabled = false;
+            camera3.SetActive(false);
+
+            camera4AudioLis.enabled = false;
+            camera4.SetActive(false);
+
+            camera1AudioLis.enabled = false;
+            camera1.SetActive(false);
+
+            camera5AudioLis.enabled = false;
+            camera5.SetActive(false);
+
+            camera7AudioLis.enabled = false;
+            camera7.SetActive(false);
+
+            camera8AudioLis.enabled = false;
+            camera8.SetActive(false);
+
+            camera9AudioLis.enabled = true;
+            camera9.SetActive(true);
 
         }
     }

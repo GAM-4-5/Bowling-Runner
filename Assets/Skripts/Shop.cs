@@ -26,24 +26,40 @@ public class Shop : PlayerCollision
     public GameObject GreenishB;
     public GameObject GreenishS;
 
+    public GameObject FireB;
+    public GameObject FireS;
+
+    public GameObject WaterB;
+    public GameObject WaterS;
+
+    public GameObject GalaxyB;
+    public GameObject GalaxyS;
+
     public Text pinScoreText;
     public TextMeshProUGUI select1;
     public TextMeshProUGUI select2;
     public TextMeshProUGUI select3;
     public TextMeshProUGUI select4;
     public TextMeshProUGUI select5;
+    public TextMeshProUGUI select6;
+    public TextMeshProUGUI select7;
+    public TextMeshProUGUI select8;
 
     public int player1;
     public int player2;
     public int player3;
     public int player4;
     public int player5;
+    public int player6;
+    public int player7;
+    public int player8;
 
     public int broj = 0;
     public int test = 0;
 
     //public int pinScore;
     public int price = 100;
+    public int price2 = 150;
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +74,9 @@ public class Shop : PlayerCollision
         player3 = data1.player3;
         player4 = data1.player4;
         player5 = data1.player5;
+        player6 = data1.player6;
+        player7 = data1.player7;
+        player8 = data1.player8;
         test = data1.test;
 
 
@@ -76,6 +95,9 @@ public class Shop : PlayerCollision
             player3 = 0;
             player4 = 0;
             player5 = 0;
+            player6 = 0;
+            player7 = 0;
+            player8 = 0;
             selectedCharacter = 0;
             Save.SavePlayer(this);
         }
@@ -162,6 +184,48 @@ public class Shop : PlayerCollision
             GreenishB.SetActive(false);
         }
     }
+    public void Buy6()
+    {
+        if (pinScore >= price2)
+        {
+            HighScore = HighScore + 1 - 1;
+            pinScore = pinScore - price2;
+            SaveSystem.SaveScore(this);
+            pinScoreText.text = pinScore.ToString();
+            player6 = 6;
+            Save.SavePlayer(this);
+            FireS.SetActive(true);
+            FireB.SetActive(false);
+        }
+    }
+    public void Buy7()
+    {
+        if (pinScore >= price2)
+        {
+            HighScore = HighScore + 1 - 1;
+            pinScore = pinScore - price2;
+            SaveSystem.SaveScore(this);
+            pinScoreText.text = pinScore.ToString();
+            player7 = 7;
+            Save.SavePlayer(this);
+            WaterS.SetActive(true);
+            WaterB.SetActive(false);
+        }
+    }
+    public void Buy8()
+    {
+        if (pinScore >= price2)
+        {
+            HighScore = HighScore + 1 - 1;
+            pinScore = pinScore - price2;
+            SaveSystem.SaveScore(this);
+            pinScoreText.text = pinScore.ToString();
+            player8 = 8;
+            Save.SavePlayer(this);
+            GalaxyS.SetActive(true);
+            GalaxyB.SetActive(false);
+        }
+    }
 
     void Select()
     {
@@ -215,6 +279,36 @@ public class Shop : PlayerCollision
             GreenishS.SetActive(false);
             GreenishB.SetActive(true);
         }
+        if (player6 == 6)
+        {
+            FireS.SetActive(true);
+            FireB.SetActive(false);
+        }
+        else
+        {
+            FireS.SetActive(false);
+            FireB.SetActive(true);
+        }
+        if (player7 == 7)
+        {
+            WaterS.SetActive(true);
+            WaterB.SetActive(false);
+        }
+        else
+        {
+            WaterS.SetActive(false);
+            WaterB.SetActive(true);
+        }
+        if (player8 == 8)
+        {
+            GalaxyS.SetActive(true);
+            GalaxyB.SetActive(false);
+        }
+        else
+        {
+            GalaxyS.SetActive(false);
+            GalaxyB.SetActive(true);
+        }
     }
 
     public void SelectPLayer0()
@@ -246,6 +340,21 @@ public class Shop : PlayerCollision
     public void SelectPlayer5()
     {
         selectedCharacter = 5;
+        Save.SavePlayer(this);
+    }
+    public void SelectPlayer6()
+    {
+        selectedCharacter = 6;
+        Save.SavePlayer(this);
+    }
+    public void SelectPlayer7()
+    {
+        selectedCharacter = 7;
+        Save.SavePlayer(this);
+    }
+    public void SelectPlayer8()
+    {
+        selectedCharacter = 8;
         Save.SavePlayer(this);
     }
 
