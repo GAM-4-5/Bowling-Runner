@@ -9,6 +9,7 @@ public class Leaderboard : MonoBehaviour
 {
     public static PlayGamesPlatform platform;
     
+    //prilikom paljenja igre, igra se povezuje na korisnikom google play account
     void Start()
     {
         if (platform == null)

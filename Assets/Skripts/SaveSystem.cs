@@ -6,6 +6,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveSystem
 {
+    //stvara file u kojem se spremaju kriptirani podatci
     public static void SaveScore (PlayerCollision pinscore)
     {
         BinaryFormatter formatter = new BinaryFormatter();
@@ -17,7 +18,7 @@ public static class SaveSystem
         formatter.Serialize(stream, data);
         stream.Close();
     }
-
+    //na poziv otvara file te omogućuje učitavanje podataka
     public static ScoreData LoadScore()
     {
         string path = Application.persistentDataPath + "/pinscore.score";

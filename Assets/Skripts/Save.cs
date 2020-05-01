@@ -6,6 +6,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class Save
 {
+    //stvara file na uređaju u kojem se spremaju kriptirani podatci
     public static void SavePlayer(Shop player)
     {
 
@@ -18,7 +19,7 @@ public static class Save
         formatter.Serialize(stream, data1);
         stream.Close();
     }
-
+     //na poziv otvara file i učitava spremljene podatke
     public static PlayerData LoadPlayer()
     {
         string path = Application.persistentDataPath + "/player.select";

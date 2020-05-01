@@ -26,6 +26,7 @@ public class select : MonoBehaviour
 
     }
 
+    //aktivira odabranu kuglu ostale su neaktivne
     void SelectCharacter()
     {
         int i = 0;

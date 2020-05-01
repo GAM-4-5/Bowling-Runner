@@ -12,6 +12,7 @@ public class WallMenagerRight : MonoBehaviour
     private int amnTilesOnScreen = 40;
 
     // Start is called before the first frame update
+    //postavlja novi zid ako je igrač blizu kraja
     void Start()
     {
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
@@ -29,6 +30,7 @@ public class WallMenagerRight : MonoBehaviour
             SpawnTile();
         }
     }
+    //stvara novi zid
     private void SpawnTile(int prefabIndex = -1)
     {
         GameObject go;

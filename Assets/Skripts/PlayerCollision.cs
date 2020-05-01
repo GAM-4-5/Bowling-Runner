@@ -30,6 +30,7 @@ public class PlayerCollision : MonoBehaviour
         HighScore = data2.HighScore;
     }
 
+    //u slučaju sudara s prepreko na ekranu pojavi "game over", ako je postavljen novi rekord ispisuje se "new highscore", sprema kolicinu skupljenih čunjeva te ucitava izbornik
     void OnCollisionEnter (Collision collisionInfo )
     {
         if (collisionInfo.collider.tag == "Obstacle")
@@ -51,6 +52,7 @@ public class PlayerCollision : MonoBehaviour
 
         }
     }
+    //provjerava pređenu udaljenost te ako je veća od rekorda postavlja ju kao novi rekord
     void Update()
     {
         if (player.position.z > 129)

@@ -13,7 +13,7 @@ public class MainManu : MonoBehaviour
     int broj = 0;
     public int score;
 
-
+    //učitavanje spremljenih podataka
     void Start()
     {
         HScore data2 = SaveScore.LoadHigh();
@@ -29,19 +29,22 @@ public class MainManu : MonoBehaviour
     }
 
 
-
+    //na klik izlaz iz igre
     public void QuitGame()
     {
         Application.Quit();
     }
+    //na klik ulaz u trgovinu
     public void Shop()
     {
         SceneManager.LoadScene("Shop");
     }
+    //na klik ulaz u izbornik
     public void Menu()
     {
         SceneManager.LoadScene("Menu");
     }
+    //na klik ulaz u leaderboard i učitavanje aktualnog leaderboarda
     public void UpdateLeaderboardScore()
     {
         if (PlayerPrefs.GetInt("ScoreToUpdate", 0) == 0)

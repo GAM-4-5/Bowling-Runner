@@ -61,6 +61,7 @@ public class Shop : PlayerCollision
     public int price = 100;
     public int price2 = 150;
 
+    //učitavanje spremljenih podataka
     // Start is called before the first frame update
     void Start()
     {
@@ -110,11 +111,13 @@ public class Shop : PlayerCollision
         //Save.SavePlayer(this);
     }
 
+    //na klik se pokreće igra
     public void Play()
     {
         SceneManager.LoadScene("Test01");
     }
 
+    //kupnja kugle 1, provjera broja skupljenih čunjeva te oduzimanje i spremanje nove količine skupljenih čunjeva
     public void Buy1()
     {
         if (pinScore >= price)
@@ -128,6 +131,7 @@ public class Shop : PlayerCollision
             GreenB.SetActive(false);
         }
     }
+    //kupnja kugle 2, provjera broja skupljenih čunjeva te oduzimanje i spremanje nove količine skupljenih čunjeva
     public void Buy2()
     {
         if (pinScore >= price)
@@ -142,6 +146,7 @@ public class Shop : PlayerCollision
             WhiteB.SetActive(false);
         }
     }
+    //kupnja kugle 3, provjera broja skupljenih čunjeva te oduzimanje i spremanje nove količine skupljenih čunjeva
     public void Buy3()
     {
         if (pinScore >= price)
@@ -156,6 +161,7 @@ public class Shop : PlayerCollision
             YellowB.SetActive(false);
         }
     }
+    //kupnja kugle 4, provjera broja skupljenih čunjeva te oduzimanje i spremanje nove količine skupljenih čunjeva
     public void Buy4()
     {
         if (pinScore >= price)
@@ -170,6 +176,7 @@ public class Shop : PlayerCollision
             BlueB.SetActive(false);
         }
     }
+    //kupnja kugle 5, provjera broja skupljenih čunjeva te oduzimanje i spremanje nove količine skupljenih čunjeva
     public void Buy5()
     {
         if (pinScore >= price)
@@ -184,6 +191,7 @@ public class Shop : PlayerCollision
             GreenishB.SetActive(false);
         }
     }
+    //kupnja kugle 6, provjera broja skupljenih čunjeva te oduzimanje i spremanje nove količine skupljenih čunjeva
     public void Buy6()
     {
         if (pinScore >= price2)
@@ -198,6 +206,7 @@ public class Shop : PlayerCollision
             FireB.SetActive(false);
         }
     }
+    //kupnja kugle 7, provjera broja skupljenih čunjeva te oduzimanje i spremanje nove količine skupljenih čunjeva
     public void Buy7()
     {
         if (pinScore >= price2)
@@ -212,6 +221,7 @@ public class Shop : PlayerCollision
             WaterB.SetActive(false);
         }
     }
+    //kupnja kugle 8, provjera broja skupljenih čunjeva te oduzimanje i spremanje nove količine skupljenih čunjeva
     public void Buy8()
     {
         if (pinScore >= price2)
@@ -227,6 +237,7 @@ public class Shop : PlayerCollision
         }
     }
 
+    //aktivacija kupljenih lopti, omogućavanje odabira kugle
     void Select()
     {
         if (player1 == 1)
@@ -311,6 +322,7 @@ public class Shop : PlayerCollision
         }
     }
 
+    //spremanje odaberene kugle
     public void SelectPLayer0()
     {
         selectedCharacter = 0;

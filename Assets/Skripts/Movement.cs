@@ -19,6 +19,7 @@ public class Movement : MonoBehaviour
     {
         //Vector3 mov = new Vector3(SimpleInput.GetAxis("Horizontal") * sideForce, 0, 0);
         //controllerPlayer.Move(mov * Time.deltaTime);
+        ///upravljanje kugle (lijevo/desno) na klik
         Vector3 x = new Vector3(SimpleInput.GetAxis("Horizontal") * sideForce * Time.deltaTime,0, forwardForce);
         rb.velocity = x;
         if (player.position.z  % 1000 < 1 & player.position.z > 1){

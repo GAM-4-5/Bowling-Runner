@@ -14,6 +14,7 @@ public class ObstacleMenager : MonoBehaviour
     private float spawnY = 2.8f;
 
     // Start is called before the first frame update
+    // provjerava na kojoj se koordinati nalazi igrač te postavlja nove prepreke
     void Start()
     {
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
@@ -32,6 +33,7 @@ public class ObstacleMenager : MonoBehaviour
             SpawnTile();
         }
     }
+    //stvaranje nove prepreke
     private void SpawnTile(int prefabIndex = -1)
     {
         spawnX = Random.Range(-17, 17);

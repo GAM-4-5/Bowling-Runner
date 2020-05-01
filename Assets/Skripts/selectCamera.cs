@@ -53,6 +53,7 @@ public class selectCamera : MonoBehaviour
         SelectCamera();
     }
 
+    //provjerava koja kugla je odabrana te aktivira kameru za tu kuglu dok ostale gasi
     void SelectCamera()
     {
         if (selectedCharacter == 0)

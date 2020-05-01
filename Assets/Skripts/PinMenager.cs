@@ -14,6 +14,7 @@ public class PinMenager : MonoBehaviour
     private float spawnY = 2.7f;
 
     // Start is called before the first frame update
+    //provjerava na kojoj se koordinati nalazi igrač te postavlja nove čunjeve
     void Start()
     {
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
@@ -32,6 +33,7 @@ public class PinMenager : MonoBehaviour
             SpawnTile();
         }
     }
+    //stvaranje novih čunjeva
     private void SpawnTile(int prefabIndex = -1)
     {
         spawnX = Random.Range(-20, 20);

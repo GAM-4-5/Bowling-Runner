@@ -8,11 +8,13 @@ public class CountDown : MonoBehaviour
     public int countdownTime;
     public Text countdownDisplay;
 
+    //odbrojava 3 sekunde na pocetku igre
     private void Start()
     {
         StartCoroutine(CountdownToStart());
     }
 
+    
     IEnumerator CountdownToStart()
     {
         while(countdownTime > 0)

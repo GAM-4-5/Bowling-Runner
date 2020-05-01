@@ -13,6 +13,7 @@ public class TileMenager : MonoBehaviour
     private int amnTilesOnScreen = 50;
 
     // Start is called before the first frame update
+    //postavlja traku za kretanje ispred igraca ukoliko se približi rubu
     void Start()
     {
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
@@ -30,6 +31,7 @@ public class TileMenager : MonoBehaviour
             SpawnTile();
         }
     }
+    //stvara novu tranu za kretanje
     private void SpawnTile(int prefabIndex = -1)
     {
         GameObject go;
